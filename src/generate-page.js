@@ -18,15 +18,20 @@ function buildPageShell () {
         <section>
             <div class="team-body-container">
                 <div class="row">
+                    <div class="team-member-cards-container col s12 m6 l3">
+
+                    ${team-member-cards}
 
                 </div>
             </div>
         </section>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://kit.fontawesome.com/fce42678c9.js" crossorigin="anonymous"></script>
     </body>
     </html>`
 }
+
 
 function addTeamMember () {
     return new Promise (function(resolve, rejected) {
