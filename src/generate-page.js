@@ -53,7 +53,7 @@ function buildPageShell () {
 }
 
 
-function addTeamMember () {
+function addTeamMemberCard () {
     return new Promise (function(resolve, rejected) {
 
         let memberProfile = "";
