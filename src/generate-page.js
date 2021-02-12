@@ -1,4 +1,10 @@
-const fs = require("fs");
+const inquirer = require('inquirer');
+const Employee = require('../lib/employee');
+const Manager = require('../lib/manager');
+const Engineer = require('../lib/engineer');
+const Intern = require('../lib/intern');
+const PageGenerator = require('../src/generate-page')
+const fs = require('fs');
 
 function buildPageShell () {
     const htmlShell =
@@ -11,12 +17,12 @@ function buildPageShell () {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="./styles.css">
-        <title>${managerData.managerName}'s Team Profile</title>
+        <title>Team Profile</title>
     </head>
     <body>
         <nav>
             <div class="nav-wrapper nav-height">
-                <a href="#" class="brand-logo center">${managerData.managerName}'s Team Profile</a>
+                <a href="#" class="brand-logo center">Team Profile</a>
             </div>
         </nav>
         <section>
