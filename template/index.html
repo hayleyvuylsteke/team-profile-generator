@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>${managerData.managerName}'s Team Profile</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <p class="brand-logo">${managerData.managerName}'s Team Profile</p>
+        </div>
+    </nav>
+    <section>
+        <div class="team-body-container">
+            <div class="row">
+                <div class="team-member-cards-container col s12 m6 l3">
+
+                    <div class="card engineer-card">
+                        <div class="card-title"> 
+                            <span>${name}</span>
+                            <span><i class="fas fa-glasses"></i> ${role}</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Employee ID: ${id}</p>
+                            <p>Email: <a href="mailto:${email}">${email}</a></p>
+                            <p>Github Profile: <a href="https://github.com/${github}">${github}</a></p>
+                        </div>
+                    </div>
+                    <div class="card intern-card">
+                        <div class="card-title"> 
+                            <span>${name}</span>
+                            <span><i class="fas fa-user-graduate"></i> ${role}</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Employee ID: ${id}</p>
+                            <p>Email: <a href="mailto:${email}">${email}</a></p>
+                            <p>School: ${school}</a></p>
+                        </div>
+                    </div>
+                    <div class="card manager-card">
+                        <div class="card-title"> 
+                            <span>${name}</span>
+                            <span><i class="fas fa-briefcase"></i> ${role}</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Employee ID: ${id}</p>
+                            <p>Email: <a href="mailto:${email}">${email}</a></p>
+                            <p>Phone: <a href="tel:${officeNumber}">${officeNumber}</a></p>
+                        </div>
+                    </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://kit.fontawesome.com/fce42678c9.js" crossorigin="anonymous"></script>
+</body>
+</html>
