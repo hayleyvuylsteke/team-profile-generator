@@ -10,12 +10,14 @@ test('Testing the office Number creation', () => {
     
   });
 
-  test ('Testing the getRole() function', () => {
-    const roleTest = "Manager"
+  test ('Testing the getRole() and getOfficeNumber() functions', () => {
+    let roleTest = "Manager"
+    let officeNumberTest2 = "519-555-2333"
 
     let managerTest2 = new Manager ("Hayley Manager2", "2335", "Hayley@hayley.com", "519-555-2333")
 
-    expect(managerTest2.getRole()).toBe(roleTest)
+    expect(managerTest2.getRole()).toBe(roleTest);
+    expect(managerTest2.getOfficeNumber()).toBe(officeNumberTest2);
 
   })
   

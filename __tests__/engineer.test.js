@@ -9,10 +9,12 @@ test('testing creating a github', () => {
   expect(engineerTest1.github).toBe(githubTest)  
   });
   
-  test('getting engineer role', () => {
+  test('testing getRole and getGithub', () => {
     let roleTest = "Engineer"
+    let githubTest2 = "hayleyvuylsteke"
 
-    let engineerTest2 = new Engineer ("hayley engineer", "23232", "hayley@hayley.com")
+    let engineerTest2 = new Engineer ("hayley engineer", "23232", "hayley@hayley.com", "hayleyvuylsteke")
 
     expect(engineerTest2.getRole()).toBe(roleTest)
+    expect(engineerTest2.getGithub()).toBe(githubTest2)
   })
